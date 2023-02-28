@@ -18,7 +18,7 @@ body {
     justify-content: center;
 }
 
-.myDescription{
+.myDescription {
     display: flex;
     justify-content: center;
     width: 600px;
@@ -31,22 +31,22 @@ body {
     text-align: justify;
 }
 
-.socialNetwork{
+.socialNetwork {
     display: flex;
     justify-content: space-between;
     width: 260px;
     margin-inline: auto;
 }
 
-.socialNetwork a{
+.socialNetwork a {
     text-decoration: none;
 }
 
-.socialNetwork i:hover{
+.socialNetwork i:hover {
     color: #93BFCF;
 }
 
-.socialNetwork i{
+.socialNetwork i {
     font-size: 50px;
     color: #EEE9DA;
 }
@@ -62,7 +62,7 @@ body {
     margin-inline: auto;
 }
 
-.whoAmI span{
+.whoAmI span {
     font-family: monospace;
     font-weight: bold;
     font-size: 28px;
@@ -197,6 +197,44 @@ body {
     }
 }
 
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
 
 /* Date from a time box */
 .timeline-date {
@@ -260,13 +298,49 @@ body {
     border-color: #EEE9DA;
 }
 
-footer{
+.portfolio {
+    margin-inline: auto;
+}
+
+.portfolio h2 {
+    border: 10px solid #BDCDD6;
+    width: auto;
+    margin-block-start: 25px;
+    margin-block-end: 25px;
+    padding: 25px;
+    text-align: center;
+    width: 600px;
+    margin-inline: auto;
+}
+
+.portfolio button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #6096B4;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.portfolio button:hover {
+    background-color: #93BFCF;
+}
+
+.cardsProjects {
+    width: 900px;
+    margin-inline: auto;
+}
+
+footer {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-footer i{
+footer i {
     display: flex;
     justify-content: center;
     width: 600px;
